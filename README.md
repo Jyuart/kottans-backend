@@ -8,19 +8,11 @@ It was weird to start learning programming with something that is not programmin
 
 I've never worked with command line before, but it wasn't that easy. And still, communicating with the PC on this level feels great. I've managed to deal with all quizes on Linux Survival, but returning to them a month later was a challenge. It's really important to use it every day to get used to all commands. 
 
-<details>
-<summary>Screenshot #1</summary>
-![Screenshot #1]()
-</details>
-<details>
-<summary>Screenshot #2</summary>
-![Screenshot #2]()
-</details>
-<details>
-<summary>Screenshot #3</summary>
-![Screenshot #3]()
-</details>
-<details>
-<summary>Screenshot #4</summary>
-![Screenshot #4]()
-</details>
+
+![Screenshot1](screenshots/LinSurv1.png)
+
+![Screenshot2](screenshots/LinSurv2.png)
+
+![Screenshot3](screenshots/LinSurv3.png)
+
+![Screenshot4](screenshots/LinSurv4.png)
