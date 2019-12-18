@@ -123,3 +123,43 @@ At first, it was as difficult as article about Memory Management. But watching i
 ![khan](task_networks/khan.png)
 
 ![networking](task_networks/networking.png)
+
+## HTTP & HTTPS
+
+### Practice requests
+
+```
+* curl -i https://api.github.com/orgs/kottans/repos
+
+* curl -i -u 'jyuart' "https://api.github.com/repos/jyuart/kottans-backend/issues" -d '{"title": "HTTP-Practice", "body": "This issue is created with GitHub API"}'
+```
+
+### Answers
+
+> Name at least three possible negative consequences of not using https.
+
+1. Users' info can be stolen (logins, passwords, financial data)
+2. Personal data sent to users can be intercepted 
+3. Users may deal with changed site
+4. There is no neat green lock in the address bar of the browser
+
+> Explain the main idea behind public key cryptography in few sentences
+
+There are two keys: public and private. The first one is used for encrypting messages and available for everyone. The second one is kept by its owner and used for decrypting messages. So, anyone can encrypt their messages, but only the owner of the keys can decrypt and read it.
+
+> Implementaion functionality for the pet clinic application:
+
+* add new pet - **POST** (pets/new; body: {"Name": "pet_name", "Age": age, "Breed": "pets_breed", "Owner's Name": "owner_name", "Medical History": "med_history"}, response = 201 Created)
+
+* search pet by name - **GET** (provide pet's name using query '?name=pets_name', response = 200 OK)
+
+* change name of an existing pet - **PUT** (/pets/pets_name; body: {"Name": "new_pet_name"}, response = 200 OK)
+
+* add new info about pet's health - **PUT** (/pets/pets_name; body: {"Medical History": "new_health_info"}, response = 200 OK)
+
+* assign a pet to a particular doctor in the clinic - **PUT** (/pets/pets_name; body: {"Doctor": "doctor"}, response = 200 OK)
+
+* register an appointment for a pet - **POST** (/appointments/new; body: {"Name": "pet_name", "Doctor": "doctor" [or assigned doctor if any], "Date": date, "Time": time})
+
+I'll use **POST** to add new info to the site (new pet or new appointment). **PUT** will be used to update or add new pet's info to the existing page (including assigned doctor). **GET** is for searching for particular pet.
+
